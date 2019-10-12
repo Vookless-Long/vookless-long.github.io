@@ -2,6 +2,8 @@
 <html class="theme-next use-motion theme-next-Next">
 <head><meta name="generator" content="Hexo 3.9.0">
   
+    
+
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +25,8 @@
 
 
 
+    <link rel="alternate" href="/atom.xml" title="VookLess" type="application/atom+xml">
+
 
 
     <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.0">
@@ -30,7 +34,7 @@
 
 
 
-  <title> Hello World // Hexo </title>
+  <title> Hello World // VookLess </title>
 </head>
 
 <body>
@@ -45,7 +49,7 @@
       <span class="logo">
         <i class="icon-logo"></i>
       </span>
-      <span class="site-title">Hexo</span>
+      <span class="site-title">VookLess</span>
   </a>
   <span class="logo-line-after"><i></i></span>
 </h1>
@@ -55,15 +59,23 @@
     
       
       <li class="menu-item menu-item-home">
-        <a href="/">
+        <a href="/ || home">
           <i class="menu-item-icon icon-home"></i> <br>
           Home
         </a>
       </li>
     
       
+      <li class="menu-item menu-item-categories">
+        <a href="/categories/ || th">
+          <i class="menu-item-icon icon-categories"></i> <br>
+          Categories
+        </a>
+      </li>
+    
+      
       <li class="menu-item menu-item-archives">
-        <a href="/archives">
+        <a href="/archives/ || archive">
           <i class="menu-item-icon icon-archives"></i> <br>
           Archives
         </a>
@@ -71,7 +83,7 @@
     
       
       <li class="menu-item menu-item-tags">
-        <a href="/tags">
+        <a href="/tags? || tags">
           <i class="menu-item-icon icon-tags"></i> <br>
           Tags
         </a>
@@ -159,7 +171,7 @@
           <div class="post-nav">
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/10/09/article-title/">article title</a>
+                <a href="/uncategorized/index.html">article title</a>
               
             </div>
 
@@ -213,8 +225,8 @@
 
     <div class="site-overview">
       <div class="site-author motion-element">
-        <img class="site-author-image" src="/images/default_avatar.jpg" alt="John Doe">
-        <p class="site-author-name">John Doe</p>
+        <img class="site-author-image" src="/images/default_avatar.jpg" alt="Vook Chew">
+        <p class="site-author-name">Vook Chew</p>
       </div>
       <p class="site-description motion-element"></p>
       <div class="site-state motion-element">
@@ -232,6 +244,13 @@
         </div>
       </div>
 
+      
+        <div class="feed-link motion-element">
+          <a href="/atom.xml">
+            <i class="menu-item-icon icon-feed"></i>
+            RSS
+          </a>
+        </div>
       
 
       <div class="links-of-author motion-element">
@@ -272,7 +291,7 @@
   <span class="with-love">
     <i class="icon-heart"></i>
   </span>
-  <span class="author">John Doe</span>
+  <span class="author">Vook Chew</span>
 </div>
 
 <div class="powered-by">
@@ -282,7 +301,7 @@
 <div class="theme-info">
   Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 
@@ -385,6 +404,9 @@
       $.Velocity.RunSequence([
         { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
         { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
+        
+        { e: $('.logo-line-before i'), p: { translateX: "100%" }, o: { duration: 500, sequenceQueue: false } },
+        { e: $('.logo-line-after i'), p: { translateX: "-100%" }, o: { duration: 500, sequenceQueue: false } },
         
         { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200 } }
       ]);
