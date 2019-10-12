@@ -1137,7 +1137,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #945e54;
+  background: #f422ac;
 }
 .sidebar-nav {
   margin: 0;
@@ -1549,6 +1549,14 @@ body {
 .page-home .post-type-quote .post-tags,
 .page-post-detail .post-type-quote .post-tags {
   display: none;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #0477ab;
+  text-decoration: underline;
 }
 .pagination {
   margin: 120px 0 40px;
